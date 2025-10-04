@@ -57,3 +57,46 @@ document.addEventListener("DOMContentLoaded", () => {
     isDark = !isDark;
   });
 });
+
+// form validation
+// storege
+// let storege = [];
+// document.addEventListener("submit", (e) => {
+//   e.preventDefault();
+
+//   let inputName = document.getElementById("uname");
+//   let inputEmail = document.getElementById("email");
+//   let inputDescription = document.getElementById("description");
+
+//   let nameError = document.getElementById("nameError");
+//   let emailError = document.getElementById("emailError");
+//   let descriptionError = document.getElementById("descriptionError");
+
+//   const nameValue = inputName.value;
+//   const emailValue = inputEmail.value;
+//   const descriptionValue = inputDescription.value;
+
+//   nameError.innerHTML = "";
+//   emailValue.innerHTML = "";
+//   descriptionValue.innerHTML = "";
+
+//   if (nameValue == "") {
+//     nameError.innerHTML = "required name field";
+//   } else if (emailValue == "") {
+//     emailError.innerHTML = "required email field";
+//   } else if (descriptionValue == "") {
+//     descriptionError.innerHTML = "required Message field";
+//   } else {
+//     alert("Form submitted successfully!");
+//     storege.push({
+//       name: nameValue,
+//       email: emailValue,
+//       description: descriptionValue,
+//     });
+//     console.log(storege);
+
+//     inputName.value = "";
+//     inputEmail.value = "";
+//     inputDescription.value = "";
+//   }
+// });

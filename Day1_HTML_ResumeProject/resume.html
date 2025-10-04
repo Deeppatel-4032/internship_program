@@ -96,7 +96,7 @@
   </section>
 
   <!-- Skills -->
-  <section id="skill" class="py-200">
+  <section id="skill" class="py-100">
     <div class="container">
       <div class="row">
         <!-- Table -->
@@ -138,28 +138,30 @@
 
         <!-- Skills logos -->
         <div class="col-12 col-md-6">
-          <h2 class="text-center fs-1 fw-bold text-light pb-5 text-decoration-underline">Skill</h2>
-          <div class="d-flex flex-wrap justify-content-center p-4 py-5 skill-box gap-3">
-            <div class="skill-img text-center">
-              <img src="./images/HTML5_badge.png" class="img-fluid" alt="HTML5">
-              <h5>HTML5</h5>
-            </div>
-            <div class="skill-img text-center">
-              <img src="./images/css3-icon-28.jpg" class="img-fluid" alt="CSS3">
-              <h5>CSS3</h5>
-            </div>
-            <div class="skill-img text-center">
-              <img src="./images/javascript-original.svg" class="img-fluid" alt="JavaScript">
-              <h5>JavaScript</h5>
-            </div>
-            <div class="skill-img text-center">
-              <img src="./images/bootstrap-logo.png" class="img-fluid" alt="Bootstrap">
-              <h5>Bootstrap</h5>
-            </div>
-            <div class="skill-img text-center">
-              <img src="./images/tailwind.png" class="img-fluid" alt="Tailwind CSS">
-              <h5>Tailwind CSS</h5>
-            </div>
+          <h2 class="text-center fs-1 fw-bold text-light text-decoration-underline">Skill</h2>
+          <div class="d-flex flex-wrap justify-content-center p-4 skill-box gap-3">
+            <ul class="skills list-unstyled">
+              <li>
+                <img src="./images/HTML5_badge.png" alt="HTML">
+                HTML5 & CSS3
+              </li>
+              <li>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="JavaScript"> JavaScript
+              </li>
+              <li>
+                <img src="./images/jquery-original.svg" alt="jQuery">
+                jQuery
+              </li>
+              <li>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                Node.js
+              </li>
+              <li>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                PHP
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -181,23 +183,29 @@
         </div>
         <!-- Form -->
         <div class="col-12 col-md-6">
-          <h2 class="fw-bold text-white mb-3">Write me a message</h2>
+          <h2 class="fw-bold text-white mb-3">Write me a message 💌</h2>
           <div class="my-form p-4">
-            <form action="">
+            <form action="" id="myFrom">
               <div class="row mb-3">
                 <div class="col-md-6 mb-3 mb-md-0">
-                  <input type="text" name="uname" class="form-control" placeholder="Enter your name">
+                  <input type="text" name="uname" id="uname" class="form-control" placeholder="Enter your name">
+                  <p id="nameError" class="error fs-6"></p>
                 </div>
                 <div class="col-md-6">
-                  <input type="email" name="email" class="form-control" placeholder="Enter your email">
+                  <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email"
+                    required>
+                  <p id="emailError" class="error fs-6"></p>
                 </div>
               </div>
               <div class="mb-3">
-                <textarea class="form-control" rows="5" placeholder="Your message here"></textarea>
+                <textarea class="form-control" name="description" id="description" rows="5"
+                  placeholder="Your message here"></textarea>
+                <p id="descriptionError" class="error fs-6"></p>
               </div>
               <div class="d-flex justify-content-center py-3">
-                <button type="submit" class="btn btn-outline-info">Submit</button>
+                <button type="submit" id="submitBtn" class="btn btn-outline-info">Submit</button>
               </div>
+              <p id="status" class="status mt-4 text-center fs-5"></p>
             </form>
           </div>
         </div>
@@ -248,7 +256,7 @@
         </div>
         <div class="col-12 col-md-4">
           <h5 class="mb-3 fs-3 text-lg-center ps-lg-5" style="text-decoration: underline;">Quick Links</h5>
-          <div class="social-media">
+          <div class="menu-link">
             <ul class="list-unstyled text-lg-center">
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
