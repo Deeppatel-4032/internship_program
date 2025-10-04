@@ -146,6 +146,12 @@ ul.skills li.hovered::before {
   transform: scaleY(1);
 }
 
+#refreshData.loading {
+  pointer-events: none;
+  opacity: 0.7;
+  cursor: wait;
+}
+
 /* contact */
 .my-form {
   background: transparent;

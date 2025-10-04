@@ -1,0 +1,44 @@
+{
+  "skills": [
+    {
+      "name": "HTML5 & CSS3",
+      "icon": "./images/HTML5_badge.png"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+    },
+    {
+      "name": "jQuery",
+      "icon": "./images/jquery-original.svg"
+    },
+    {
+      "name": "Node.js",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+    },
+    {
+      "name": "PHP",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+    }
+  ],
+  "education": [
+    {
+      "school": "J.P Pardiwala Arts & Commerce College, Pardi",
+      "class": "3rd year",
+      "institute": "VNSGU, Surat",
+      "year": 2025
+    },
+    {
+      "school": "Bhagini Samaj High School",
+      "class": "12th Pass",
+      "institute": "HSC",
+      "year": 2022
+    },
+    {
+      "school": "Bhagini Samaj High School",
+      "class": "10th Pass",
+      "institute": "SSC",
+      "year": 2020
+    }
+  ]
+}

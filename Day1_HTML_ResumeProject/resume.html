@@ -112,26 +112,7 @@
                   <th class="p-3">Year</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <td class="p-3">J.P Pardiwala Arts & Commerce College, Pardi</td>
-                  <td class="p-3">3rd year</td>
-                  <td class="p-3">VNSGU, Surat</td>
-                  <td class="p-3">2025</td>
-                </tr>
-                <tr>
-                  <td class="p-3">Bhagini Samaj High School</td>
-                  <td class="p-3">12th Pass</td>
-                  <td class="p-3">HSC</td>
-                  <td class="p-3">2022</td>
-                </tr>
-                <tr>
-                  <td class="p-3">Bhagini Samaj High School</td>
-                  <td class="p-3">10th Pass</td>
-                  <td class="p-3">SSC</td>
-                  <td class="p-3">2020</td>
-                </tr>
-              </tbody>
+              <tbody id="tableData"></tbody>
             </table>
           </div>
         </div>
@@ -139,29 +120,23 @@
         <!-- Skills logos -->
         <div class="col-12 col-md-6">
           <h2 class="text-center fs-1 fw-bold text-light text-decoration-underline">Skill</h2>
+
+          <!-- Refresh Button -->
+          <button id="refreshData" class="btn btn-outline-info mb-3">🔄 Refresh Skills</button>
+
+          <!-- loader -->
+          <div id="loading" style="display:none;">
+            <div class="spinner-border text-warning" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+
+          <!-- Error message -->
+          <div id="errorMessage" style="display:none; color:red; font-weight:bold;"></div>
+
+          <!-- Skills container -->
           <div class="d-flex flex-wrap justify-content-center p-4 skill-box gap-3">
-            <ul class="skills list-unstyled">
-              <li>
-                <img src="./images/HTML5_badge.png" alt="HTML">
-                HTML5 & CSS3
-              </li>
-              <li>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                  alt="JavaScript"> JavaScript
-              </li>
-              <li>
-                <img src="./images/jquery-original.svg" alt="jQuery">
-                jQuery
-              </li>
-              <li>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
-                Node.js
-              </li>
-              <li>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
-                PHP
-              </li>
-            </ul>
+            <ul class="skills list-unstyled" id="skillsContainer"></ul>
           </div>
         </div>
       </div>
